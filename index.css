@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&family=Lexend+Deca&display=swap');
+
+/*   */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bungkus{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /* padding-bottom: 190px; */
+    /* height: 100vh; */
+    background: #ddd;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bungkus .bungkus-grid{
+    width:70%;
+    overflow: hidden;
+    /* margin-top: 50px; */
+    margin-top: 6em;
+    border-radius: .5em;
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr )   ;
+}
+.bungkus-grid .card{
+    width: 100%;
+     padding: 3em 2.5em;
+    
+}
+
+.bungkus-grid .card1{
+    background: hsl(31, 77%, 52%);
+   
+}
+.bungkus-grid .card2{
+    background: hsl(184, 100%, 22%);
+    
+}
+.bungkus-grid .card3{
+    background-color: hsl(179, 100%, 13%);
+   
+}
+
+
+
+.bungkus-grid .card1 img{
+    color: #ddd;
+}
+.bungkus-grid .card h2{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size:2.5em;
+    font-weight: 560;
+    margin-top: 15px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+.bungkus-grid .card p{
+    margin-top: 1em;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: capitalize;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.bungkus-grid .learn{
+    width: 120px;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 2em;
+    margin-top: 4em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+}
+.bungkus-grid .learn1{
+    color: hsl(31, 77%, 52%);
+}
+.bungkus-grid .learn2{
+    color: hsl(184, 100%, 22%)
+}
+.bungkus-grid .learn3{
+    color: hsl(179, 100%, 13%);;
+}
+.learn:hover{
+    color: white;
+    box-shadow: 0 0 0 2px #fff;
+    background: transparent;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1285px){
+    .bungkus{
+        padding: 0 2em;
+    }
+    .bungkus .bungkus-grid{
+        width:350px;
+        overflow: hidden;
+        margin-top: 50px;
+        border-radius: .5em;
+        display: grid;
+        justify-content: center;
+        
+        grid-template-columns:1fr ;
+    }
+}
+@media screen and (max-width:450px){
+    .bungkus{
+        padding: 2.5em 2em .5em;
+        
+    }
+   .bungkus-grid div.card{
+        padding: 3em 1em;
+    }
+    .bungkus .bungkus-grid{
+        width:100%;
+        overflow: hidden;
+        margin-top: 0;
+        border-radius: .5em;
+        display: grid;
+        justify-content: center;
+
+        grid-template-columns:1fr ;
+    }
+}
